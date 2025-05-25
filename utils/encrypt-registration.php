@@ -17,7 +17,7 @@ if(isset($_POST['SingUp'])){
 
     $fullname = $name . " " . $lastName;
 
-
+    
     /* Functions */
     function UserEncryption($user){
         // Encryp data
