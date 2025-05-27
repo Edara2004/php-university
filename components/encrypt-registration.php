@@ -1,6 +1,8 @@
+
+
 <?php
 
-require_once ("index.php");
+require_once ("../../index.php");
 require_once ("config.php");
 
 
@@ -76,10 +78,15 @@ if(isset($_POST['SingUp'])){
     $result = $stmtinsert->execute([$UserDbEncrypt, $PasswordDbEncrypt, $fullname, $email, $phoneNumber, $birthday]);
     if($result)
     {
-        echo "Agregado Exitosamente";
+        echo '<script type="text/javascript">';
+        echo 'alert("El usuario fue registrado exitosamente.");';
+        echo '</script>';
+        header("location: login.php");
+        exit;
     }else{
-        echo "Error";
+        echo '<script type="text/javascript">';
+        echo 'alert("Ha ocurrido un error.");';
+        echo '</script>';;
     }
 }
-
 ?>
