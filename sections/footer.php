@@ -47,16 +47,16 @@
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Descargas</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                    <a href="../../view/maintances/maintance.php" class="hover:underline">iOS</a>
+                    <a href="../../view/maintenances/maintenances.php" class="hover:underline">iOS</a>
                 </li>
                 <li class="mb-4">
-                    <a href="../../view/maintances/maintance.php" class="hover:underline">Android</a>
+                    <a href="../../view/maintenances/maintenances.php" class="hover:underline">Android</a>
                 </li>
                 <li class="mb-4">
-                    <a href="../../view/maintances/maintance.php" class="hover:underline">Windows</a>
+                    <a href="../../view/maintenances/maintenances.php" class="hover:underline">Windows</a>
                 </li>
                 <li class="mb-4">
-                    <a href="../../view/maintances/maintance.php" class="hover:underline">MacOS</a>
+                    <a href="../../view/maintenances/maintenances.php" class="hover:underline">MacOS</a>
                 </li>
             </ul>
         </div>

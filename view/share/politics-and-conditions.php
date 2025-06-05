@@ -32,6 +32,6 @@
     </div>
 </main>
 
-<?php require '../../sections/footer.php' ?>
+<?php require '../../sections/footer.php'?>
 </body>
 </html>
