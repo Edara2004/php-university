@@ -8,7 +8,7 @@
                     <a href="#" class=" hover:underline">Sobre nosotros</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Blog</a>
+                    <a href="https://github.com/Edara2004/php-university" class="hover:underline">Blog</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
                     <a href="#" class="hover:underline">Licencias</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Terminos &amp; Condiciones</a>
+                    <a href="../../view/share/politics-and-conditions.php" class="hover:underline">Terminos &amp; Condiciones</a>
                 </li>
             </ul>
         </div>

@@ -8,6 +8,12 @@
 </head>
 <body class="bg-gray-800">
 
+<!-- Header -->
+
+<?php require '../../sections/header.php'?>
+
+<!-- Main Politics and conditions -->
+
 <main>
     <div class="flex justify-center place-items-center p-3">
         <div class="border border-white w-190">
@@ -32,6 +38,10 @@
     </div>
 </main>
 
+<!-- Footer -->
+
 <?php require '../../sections/footer.php'?>
+
+
 </body>
 </html>
