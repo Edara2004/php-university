@@ -18,25 +18,27 @@ require_once("../../components/encrypt-registration.php");
 <?php require '../../sections/header.php'; ?>
 
 <!-- Main -->
-<main class="mb-12">
+<main class="mb-20">
 
     <div class="grid grid-cols-2">
-
         <div class="col-start-1 pl-4">
-            <div class="rounded-mb border border-white w-175">
-                <h1 class="text-white text-3xl"> Coming soon!</h1>
+            <div class="rounded-md w-175 h-153 bg-gray-800 place-content-center text-center">
+                <div class="animate-pulse">
+                    <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Series</span> y Peliculas</h1>
+                    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Ve tus series y peliculas preferidas, solo en Loopkin.</p>
+                </div>
             </div>
         </div>
-
+        
+        <!-- Login Form -->
         <div class="col-start-2">
             <div class="place-items-end h-screen pr-4">
-                <!-- Login Form -->
-                <div class="w-95 p-6 shadows-lg bg-white rounded-md">
+                <div class="w-95 p-6 shadows-lg bg-white/80 rounded-md shadow-xl/30">
                     <form action="registration.php" method="post">
                         <div class="columns-1">
                             <div>
                                 <div class="bg-gray">
-                                    <h1 class=" text-center mb-2 text-4xl font-extrabold text-gray-800">Registrate</h1>
+                                    <h1 class="font-mono text-center mb-2 text-4xl font-extrabold text-gray-800">Registrate</h1>
                                     <hr class="mb-3">
 
                                     <!-- Name section -->
