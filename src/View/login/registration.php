@@ -1,8 +1,3 @@
-<?php
-require_once("../../components/config.php");
-require_once("../../components/encrypt-registration.php");
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +10,7 @@ require_once("../../components/encrypt-registration.php");
 
 <!-- Header -->
 
-<?php require '../../sections/header.php'; ?>
+<?php require '../layouts/header.php'; ?>
 
 <!-- Main -->
 <main class="mb-20">
@@ -34,7 +29,7 @@ require_once("../../components/encrypt-registration.php");
         <div class="col-start-2">
             <div class="place-items-end h-screen pr-4">
                 <div class="w-95 p-6 shadows-lg bg-white/80 rounded-md shadow-xl/30">
-                    <form action="registration.php" method="post">
+                    <form action="../../Controllers/Registration.php" method="post">
                         <div class="columns-1">
                             <div>
                                 <div class="bg-gray">
@@ -45,27 +40,27 @@ require_once("../../components/encrypt-registration.php");
                                     <div>
                                         <div class="columns-2">
                                             <div class="columns-2 mb-6">
-                                                <label for="name"><b>Nombre</b></label>
-                                                <input class="bg-gray-50 border border-gray-500 w-40 rounded-md ps-2 h-7" type="text" name="name" placeholder="Nombre" required>
+                                                <label for="nombre"><b>Nombre</b></label>
+                                                <input class="bg-gray-50 border border-gray-500 w-40 rounded-md ps-2 h-7" type="text" name="nombre" placeholder="Nombre" required>
                                             </div>
                                             <div class="columns-2">
-                                                <label for="last-name"><b>Apellido</b></label>
-                                                <input class="bg-gray-50 border border-gray-500 w-40 rounded-md ps-2 h-7" type="text" name="last-name" placeholder="Apellido" required>
+                                                <label for="apellido"><b>Apellido</b></label>
+                                                <input class="bg-gray-50 border border-gray-500 w-40 rounded-md ps-2 h-7" type="text" name="apellido" placeholder="Apellido" required>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Date of birth -->
                                     <div class="columns-2" >
-                                        <label for="birthday"><b>Fecha de nacimiento</b></label>
+                                        <label for="cumpleanos"><b>Fecha de nacimiento</b></label>
                                         <div>
-                                            <input class="bg-gray-50 border border-gray-500 col-span-2 mb-3 rounded-md w-40 ps-2 h-7 pt-center" type="date" name="birthday" required>
+                                            <input class="bg-gray-50 border border-gray-500 col-span-2 mb-3 rounded-md w-40 ps-2 h-7 pt-center" type="date" name="cumpleanos" required>
                                         </div>
                                     
-                                    <!-- Phone number -->
-                                        <label for="phone-number"><b>Telefono</b></label>
+                                    <!-- Numero de telefono -->
+                                        <label for="numero-de-telefono"><b>Telefono</b></label>
                                         <div>
-                                            <input class="bg-gray-50 border border-gray-500 col-span-2 mb-3 rounded-md w-40 ps-2 h-7 pt-center" type="text" name="phone-number" placeholder="(+) 123-4567">
+                                            <input class="bg-gray-50 border border-gray-500 col-span-2 mb-3 rounded-md w-40 ps-2 h-7 pt-center" type="text" name="numero-de-telefono" placeholder="(+) 123-4567">
                                         </div>
                                     </div>
 
@@ -90,7 +85,7 @@ require_once("../../components/encrypt-registration.php");
                                     <div >
                                         <label for="UserPassword"><b>Contraseña</b></label>
                                         <div class="mb-3">
-                                            <input class="bg-gray-50 border border-gray-500 rounded-md w-61 ps-2 h-7" type="password" name="UserPassword" id="userPassword" required>
+                                            <input class="bg-gray-50 border border-gray-500 rounded-md w-61 ps-2 h-7" type="password" name="password" id="userPassword" required>
                                             <button class="bg-gray-50 border border-gray-500 w-20 rounded-md h-7 hover:bg-gray-500 dark:hover:text-white" type="button" id="button-addon2" onclick="togglePassword()">Mostrar</button>
                                         </div>
                                     </div>
@@ -134,7 +129,7 @@ require_once("../../components/encrypt-registration.php");
 
 <!-- Footer -->
 
-<?php require '../../sections/footer.php'; ?>
+<?php require '../layouts/footer.php'; ?>
 
 <script src="../../js/toggle-password.js"></script>
 </body>
