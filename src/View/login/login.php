@@ -32,7 +32,7 @@ require '../../View/layouts/header.php';
                 <div class="border border-white bg-white/80 shadow-xl/30 rounded-md w-100 h-55">
                     
                     <!-- Login Form -->
-                    <form action="../../Controllers/user.php">
+                    <form action="../../Controllers/user.php" method="post">
                         <h1 class="text-center font-mono font-extrabold text-4xl py-5">Login</h1>
 
                         <!-- User -->
@@ -55,7 +55,7 @@ require '../../View/layouts/header.php';
 
                             <!-- Enter button -->
                             <div class="mb-3 text-center">
-                                <input class="bg-white/40 transition duration-350 border border-gray-500 w-60 rounded-md h-8 hover:bg-gray-800 dark:hover:text-white" type="submit" name="SingUp" value="Ingresar">
+                                <input class="bg-white/40 transition duration-350 border border-gray-500 w-60 rounded-md h-8 hover:bg-gray-800 dark:hover:text-white" type="submit" value="Ingresar">
                             </div>
 
                         </div>
