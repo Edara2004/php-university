@@ -21,13 +21,26 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Wait for the next update!</h1>
+<body class="bg-gray-800">
+
+<header>
+
+</header>
+
+<main>
+    <h1 class="text-white text-4xl">Wait for the next update!</h1>
+</main>
+
+<footer>
+
+</footer>
+
 </body>
 </html>
