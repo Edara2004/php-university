@@ -2,7 +2,7 @@
 
 require_once '../../config/config.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     /* Variables */
     $nombre = $_POST['nombre'];
@@ -18,20 +18,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     try {
         $connection = new ConnectionsDatabase();
         $pdo = $connection->connect();
-   
+
         $sql = "INSERT INTO users (Users, UserPasswords, fullname, email, phone_number, birthday) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmtinsert = $pdo-> prepare($sql);
+        $stmtinsert = $pdo->prepare($sql);
         $stmtinsert->execute([
-                $user,
-                $passwords,
-                $nombreCompleto,
-                $email,
-                $numeroTelefono,
-                $cumpleanos
+            $user,
+            $passwords,
+            $nombreCompleto,
+            $email,
+            $numeroTelefono,
+            $cumpleanos
         ]);
-        echo "<script>
-        alert(El usuario fue registrado exitosamente.); 
-        </script>";
+        echo "<script>alert('El usuario fue registrado exitosamente.');</script>";
         header('Location: ../View/login/login.php');
         exit();
     } catch (\Throwable $th) {
@@ -42,5 +40,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         exit();
     }
 }
-
-?>
