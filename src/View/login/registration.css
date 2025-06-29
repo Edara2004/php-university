@@ -1,0 +1,18 @@
+.animated-dark-gradient {
+    /* Tonos oscuros y fríos que combinan con bg-gray-800 */
+    background: linear-gradient(-45deg, #2c3e50, #34495e, #1a2a3a, #1f3040); /* Un degradado de grises azulados y azules oscuros */
+    background-size: 400% 400%; /* Permite que el gradiente sea más grande que el contenedor para la animación */
+    animation: gradientShift 15s ease infinite; /* Nombre de la animación, duración, tipo y repetición */
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%; /* Posición inicial del gradiente */
+    }
+    50% {
+        background-position: 100% 50%; /* Posición a mitad de la animación */
+    }
+    100% {
+        background-position: 0% 50%; /* Vuelve a la posición inicial */
+    }
+}

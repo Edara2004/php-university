@@ -10,7 +10,7 @@
 
 <!-- Header -->
 
-<?php require '../../sections/header.php'?>
+<?php require '../../View/layouts/header.php'?>
 
 <!-- Main Politics and conditions -->
 
@@ -47,7 +47,7 @@
 
 <!-- Footer -->
 
-<?php require '../../sections/footer.php'?>
+<?php require '../../View/layouts/footer.php'?>
 
 
 </body>
