@@ -15,7 +15,10 @@
 <?php require '../layouts/header.php'; ?>
 
 <!-- Main -->
-<main class="mb-20 h-full p-5">
+<main class="mb-20">
+
+    <img src="../../../public/assets/img/background-image.avif" class="absolute inset-0 mt-10 w-full h-full object-cover brightness-30 z-[-1]">
+
 
     <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-8 lg:px-16">
         <div class="w-full md:w-1/2 mt-8 md:mt-2 md:ml-2">

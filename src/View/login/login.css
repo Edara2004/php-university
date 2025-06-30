@@ -1,0 +1,19 @@
+.container-login {display: inline-block;}
+
+.text-type-writer {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s,
+        cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent}
+    
+}
+
+@keyframes typing {
+    from { width: 0}
+}
