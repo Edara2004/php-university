@@ -1,5 +1,5 @@
 # CakePHP 3
-
+tokens.php
 /vendor/*
 /config/app.php
 /node_modules/
