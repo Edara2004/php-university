@@ -3,7 +3,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             
             <a href="../../../public/assets/index.php" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="text-type-writer font-bold text-xl text-white whitespace-nowrap dark:text-white">Loopkin</span>
+                <span class="text-type-writer font-bold text-2xl text-white whitespace-nowrap hover:text-blue-400 transition duration-300">Loopkin</span>
             </a>
 
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">

@@ -1,12 +1,14 @@
 <?php
 
-require '../../tokens.php';
+/* __DIR__ permite hacer el llamado unico de un archivo, en este caso la API */
+require_once __DIR__ . '/../../tokens.php';
+
+
 
 /* Obtener el API TOKEN */
-
 $API_TOKEN = $API_TOKEN_MOVIE;
 
-$imdb_id = "tt0848228"; /* Esto es para cuando el login esté listo... */
+$imdb_id = $_GET['imdb_id'] ?? null;
 
 $curl = curl_init();
 
@@ -38,17 +40,17 @@ if ($err) {
     /*  Recolección de datos */
     if (isset($movie->movie_results[0])) {
         $data = $movie->movie_results[0];
-        echo $data->title;
-        echo "<br>" .  $data->overview;
-        echo "<br>" . $data->vote_average;
-        echo "<br>" . $data->vote_count;
-        echo "<br>" . $data->genre_ids[0];
+        /* Variables */
+
+        $title = $data->title;
+        $overview = $data->overview;
+        $vote_average = $data->vote_average;
+        $vote_count = $data->vote_count;
 
         /* Imagen de la pelicula */
         $images = $data->poster_path;
         $get_image = "<img src='https://image.tmdb.org/t/p/w500{$images}'>";
-        echo "<br>" . $images;
-        echo $get_image;
+  
     } else {
         echo "No se encontró información de la película con el ID de IMDb: " . $imdb_id;
     }
