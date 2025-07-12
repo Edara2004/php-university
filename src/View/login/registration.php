@@ -97,16 +97,18 @@
                     </div>
                 </div>
 
-                <!-- Login Form -->
+                <!-- Formulario Login -->
                 <div class="w-full md:w-1/2 mt-8 md:mt-0">
                     <div class="flex justify-center md:justify-start w-full">
                         <div class="w-full max-w-lg p-8 bg-gray-800 rounded-lg shadow-2xl relative z-10 text-white">
                             <form action="../../Controllers/Registration.php" method="post">
                                 <div class="columns-1">
                                     <div>
+                                        <!-- Registro -->
                                         <h1 class="font-sans text-center mb-6 text-4xl font-extrabold text-white">Registro</h1>
                                         <hr class="mb-6 border-gray-600">
 
+                                        <!-- Campo Nombre y Apellido -->
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                                             <div>
                                                 <label for="nombre" class="block text-gray-300 text-sm font-bold mb-2">Nombre</label>
@@ -121,11 +123,14 @@
                                         </div>
 
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                            <!-- Fecha de nacimiento -->
                                             <div>
                                                 <label for="cumpleanos" class="block text-gray-300 text-sm font-bold mb-2">Fecha de nacimiento</label>
                                                 <input class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     type="date" name="cumpleanos" required>
                                             </div>
+
+                                            <!-- Telefono -->
                                             <div>
                                                 <label for="numero-de-telefono" class="block text-gray-300 text-sm font-bold mb-2">Teléfono</label>
                                                 <input class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -133,25 +138,40 @@
                                             </div>
                                         </div>
 
+                                        <!-- Genero en Combo-box-->
+                                        <div class="mb-6">
+                                            <label for="genero" class="block text-gray-300 text-sm font-bold mb-2">Género</label>
+                                            <select id="genero" name="genero" required
+                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                                <option value="" disabled selected>Selecciona tu género</option>
+                                                <option value="masculino">Masculino</option>
+                                                <option value="femenino">Femenino</option>
+                                                <option value="otro">Otro</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Email -->
                                         <div class="mb-6">
                                             <label for="email-user" class="block text-gray-300 text-sm font-bold mb-2">Email</label>
                                             <input class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                 type="email" name="email-user" placeholder="ejemplo@gmail.com" required>
                                         </div>
 
+                                        <!-- Usuario  -->
                                         <div class="mb-6">
                                             <label for="user" class="block text-gray-300 text-sm font-bold mb-2">Usuario</label>
                                             <input class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                 type="text" name="user" required>
                                         </div>
 
+                                        <!-- Contraseña -->
                                         <div class="mb-6">
                                             <label for="UserPassword" class="block text-gray-300 text-sm font-bold mb-2">Contraseña</label>
                                             <div class="flex">
                                                 <input class="bg-gray-700 border border-gray-600 rounded-l-md w-full px-3 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     type="password" name="password" id="userPassword" required>
                                                 <button class="bg-gray-600 hover:bg-gray-700 text-white font-medium px-4 py-2 rounded-r-md border border-gray-600 border-l-0 transition duration-300 ease-in-out"
-                                                    type="button" id="button-addon1" onclick="togglePasswordVisibility('userPassword', 'button-addon1')">Mostrar</button>
+                                                    type="button" id="button-addon1" onclick="togglePassword('userPassword', 'button-addon1')">Mostrar</button>
                                             </div>
                                         </div>
 
@@ -161,7 +181,7 @@
                                                 <input class="bg-gray-700 border border-gray-600 rounded-l-md w-full px-3 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     type="password" name="UserPasswordR" id="userPasswordR" required>
                                                 <button class="bg-gray-600 hover:bg-gray-700 text-white font-medium px-4 py-2 rounded-r-md border border-gray-600 border-l-0 transition duration-300 ease-in-out"
-                                                    type="button" id="button-addon2" onclick="togglePasswordVisibility('userPasswordR', 'button-addon2')">Mostrar</button>
+                                                    type="button" id="button-addon2" onclick="togglePassword2('userPasswordR', 'button-addon2')">Mostrar</button>
                                             </div>
                                         </div>
 

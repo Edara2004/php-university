@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $numeroTelefono = $_POST['numero-de-telefono'];
     $user = $_POST['user'];
     $passwords = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $genero = $_POST['genero'];
 
     $nombreCompleto = $nombre . " " . $apellido;
 
@@ -19,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $connection = new ConnectionsDatabase();
         $pdo = $connection->connect();
 
-        $sql = "INSERT INTO users (Users, UserPasswords, fullname, email, phone_number, birthday) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (Users, UserPasswords, fullname, email, phone_number, birthday, gender) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmtinsert = $pdo->prepare($sql);
         $stmtinsert->execute([
             $user,
@@ -27,7 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombreCompleto,
             $email,
             $numeroTelefono,
-            $cumpleanos
+            $cumpleanos,
+            $genero
         ]);
         echo "<script>alert('El usuario fue registrado exitosamente.');</script>";
         header('Location: ../View/login/login.php');

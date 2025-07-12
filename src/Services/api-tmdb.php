@@ -47,4 +47,3 @@ if ($err) {
         echo "No se encontró información de la película con el ID de IMDb: " . $imdb_id;
     }
 }
-
