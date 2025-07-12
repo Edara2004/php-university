@@ -14,7 +14,7 @@
 
     <!-- Header -->
 
-    <?php require '../layouts/header.php'; ?>
+    <header><?php require '../layouts/header.php'; ?></header>
 
     <!-- Main -->
     <main>

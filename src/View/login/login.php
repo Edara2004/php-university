@@ -6,14 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Login</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="login.css">
 </head>
 
 <body class="bg-gray-800">
-
 
     <main class="h-full">
         <div class="fondo" style="background-image: url('../../../public/assets/img/background-image.avif'); background-repeat:no-repeat; background-size:cover ;background-position: center;">
@@ -35,12 +34,13 @@
                                         placeholder="Tu nombre de usuario" required>
                                 </div>
 
-                                <div class="mb-6"> 
+                                <div class="mb-6">
                                     <label for="password" class=" block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
-                                    <div class="flex items-center"> 
+                                    <div class="flex items-center">
                                         <input class="border border-gray-800 focus:ring-2 focus:ring-blue-500 rounded-l-md ps-3 py-1.5 w-full"
                                             type="password" name="password" id="userPasswordId" placeholder="Tu contraseña" required>
-                                        <button class="bg-white/80 border transition duration-350 border-gray-500 px-3 py-2 rounded-r-md hover:bg-gray-800 dark:hover:text-white/80 text-sm flex-shrink-0"
+                                        <button class="bg-white/80 border transition duration-350 border-gray-500 px-3 py-2 rounded-r-md hover:bg-gray-800
+                                                        dark:hover:text-white/80 text-sm flex-shrink-0"
                                             type="button" id="button-addon2" onclick="togglePasswordLogin()">Mostrar</button>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                                         <label>¿No tienes cuenta</label><a href="registration.php" class="text-blue-600 hover:underline dark:text-blue-500"> registrate </a><label>?</label>
                                     </div>
                                 </div>
-                                
+
                                 <div class="mb-3 text-center">
                                     <input class="bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md w-full sm:w-auto cursor-pointer focus:outline-none focus:shadow-outline"
                                         type="submit" value="Ingresar">
