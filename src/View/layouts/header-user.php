@@ -1,11 +1,11 @@
 <header class="bg-gray-800 shadow-md sticky top-0 z-50">
         <nav class="max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between">
             <!-- Logo -->
-            <a href="/index.php" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="/proyecto-universidad-tailwind/src/View/pages/home.php" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <span class="text-type-writer font-bold text-2xl text-white whitespace-nowrap hover:text-blue-400 transition duration-300">Loopkin</span>
             </a>
 
-            <!-- Botón de menú para móviles (oculto en pantallas grandes) -->
+            <!-- Botón de menú para móviles (se ocualta en pantallas grandes) -->
             <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
                 <span class="sr-only">Abrir menú principal</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">

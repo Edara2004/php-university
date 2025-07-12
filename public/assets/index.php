@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,7 +19,7 @@
 
     <!-- Header -->
 
-    <header><?php require '../../src/View/layouts/header.php' ?></header>
+    <header><?php require '../../src/View/layouts/header.php'?></header>
 
     <!-- Main -->
     <main>
@@ -65,7 +69,7 @@
     </main>
 
     <!-- Footer -->
-    <footer><?php require '../../src/View/layouts/footer.php' ?></footer>
+    <footer><?php require '../../src/View/layouts/footer.php'?></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
