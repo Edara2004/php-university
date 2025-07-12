@@ -33,16 +33,22 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
+    /* Decodificamos el Json de la API */
     $movie = json_decode($response);
-    /*  Asegúrate de que movie_results existe y no está vacío antes de intentar acceder a [0] */
+    /*  Recolección de datos */
     if (isset($movie->movie_results[0])) {
         $data = $movie->movie_results[0];
         echo $data->title;
         echo "<br>" .  $data->overview;
         echo "<br>" . $data->vote_average;
         echo "<br>" . $data->vote_count;
-        $images = "<br>" . $data->poster_path;
-        echo "<img src='{$images}'>";
+        echo "<br>" . $data->genre_ids[0];
+
+        /* Imagen de la pelicula */
+        $images = $data->poster_path;
+        $get_image = "<img src='https://image.tmdb.org/t/p/w500{$images}'>";
+        echo "<br>" . $images;
+        echo $get_image;
     } else {
         echo "No se encontró información de la película con el ID de IMDb: " . $imdb_id;
     }
