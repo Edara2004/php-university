@@ -9,10 +9,10 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
 // Cargar datos del usuario si lo necesitas en esta página
 if (isset($_SESSION['user_id'])) {
-// Aquí podrías hacer una consulta a la base de datos para obtener más detalles del usuario
- $userId = $_SESSION['user_id'];
-// ... lógica para obtener datos del usuario ...
- }
+    // Aquí podrías hacer una consulta a la base de datos para obtener más detalles del usuario
+    $userId = $_SESSION['user_id'];
+    // ... lógica para obtener datos del usuario ...
+}
 
 ?>
 
@@ -31,7 +31,8 @@ if (isset($_SESSION['user_id'])) {
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a202c; /* Un fondo oscuro*/
+            background-color: #1a202c;
+            /* Un fondo oscuro*/
         }
     </style>
 </head>
@@ -43,6 +44,7 @@ if (isset($_SESSION['user_id'])) {
 
     <!-- Main -->
     <main class="container mx-auto px-4 py-8">
+
         <!-- Título de la sección de películas -->
         <h1 class="text-white text-4xl font-bold mb-8 md:mb-10 text-center md:text-left">Películas disponibles</h1>
 
@@ -73,7 +75,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/avenger-age-of-ultron.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/avenger-age-of-ultron.php?imdb_id=tt2395427" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                                transform hover:scale-105 transition duration-300 ease-in-out
                                                                focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/avengers-age-of-ultron.jpg" alt="Avengers: Age of Ultron Poster"
@@ -85,7 +87,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/avenger-end-game.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/avenger-end-game.php?imdb_id=tt4154796" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                          transform hover:scale-105 transition duration-300 ease-in-out
                                                          focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/avengers-end-game.jpg" alt="Avengers: Endgame Poster"
@@ -97,7 +99,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/captain-america-civil-war.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/captain-america-civil-war.php?imdb_id=tt3498820" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                                   transform hover:scale-105 transition duration-300 ease-in-out
                                                                   focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/captain-america-civil-war.jpg" alt="Captain America: Civil War Poster"
@@ -109,7 +111,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/captain-america-the-first-avenger.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/captain-america-the-first-avenger.php?imdb_id=tt0458339" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                                          transform hover:scale-105 transition duration-300 ease-in-out
                                                                          focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/captain-america-the-first-avenger.jpg" alt="Captain America: The First Avenger Poster"
@@ -121,7 +123,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/captain-america-the-winter-soldier.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/captain-america-the-winter-soldier.php?imdb_id=tt1843866" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                                          transform hover:scale-105 transition duration-300 ease-in-out
                                                                          focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/captain-america-the-winter-soldier.jpg" alt="Captain America: The Winter Soldier Poster"
@@ -133,7 +135,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/guard-of-galaxy-1.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/guardians-of-galaxy-1.php?imdb_id=tt2015381" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                           transform hover:scale-105 transition duration-300 ease-in-out
                                                           focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/Guardian-of-galaxy.jpg" alt="Guardians of the Galaxy Vol. 1 Poster"
@@ -145,7 +147,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/guard-of-galaxy-2.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/guardians-of-galaxy-2.php?imdb_id=tt3896198" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                           transform hover:scale-105 transition duration-300 ease-in-out
                                                           focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/Guardian-of-galaxy-2.jpg" alt="Guardians of the Galaxy Vol. 2 Poster"
@@ -157,7 +159,7 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </a>
 
-            <a href="movies/guard-of-galaxy-3.php" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
+            <a href="movies/guardians-of-galaxy-3.php?imdb_id=tt6791350" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
                                                           transform hover:scale-105 transition duration-300 ease-in-out
                                                           focus:outline-none focus:ring-2 focus:ring-blue-500 group">
                 <img src="../../../public/assets/img/Guardian-of-galaxy-3.jpg" alt="Guardians of the Galaxy Vol. 3 Poster"
