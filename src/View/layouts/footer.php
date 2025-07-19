@@ -33,13 +33,13 @@
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                     <li class="mb-4">
-                        <a href="../../view/share/politics-and-privacity.php" class="hover:underline">Politicas de Privacidad</a>
+                        <a href="../../View/share/politics-and-privacity.php" class="hover:underline">Politicas de Privacidad</a>
                     </li>
                     <li class="mb-4">
-                        <a href="../../view/share/licenses.php" class="hover:underline">Licencias</a>
+                        <a href="../../View/share/licenses.php" class="hover:underline">Licencias</a>
                     </li>
                     <li class="mb-4">
-                        <a href="../../view/share/terms-and-conditions.php" class="hover:underline">Terminos &amp; Condiciones</a>
+                        <a href="../../View/share/terms-and-conditions.php" class="hover:underline">Terminos &amp; Condiciones</a>
                     </li>
                 </ul>
             </div>
