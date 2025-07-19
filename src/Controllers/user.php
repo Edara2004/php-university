@@ -1,11 +1,13 @@
 <?php
+
 use Dba\Connection;
+
 session_start();
 
-require_once ("../../config/config.php");
+require_once("../../config/config.php");
 
 /* Validacion del POST para el login */
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     /* Variables */
     $username = $_POST['username'] ?? '';
@@ -31,27 +33,26 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         /* Verificación */
         if ($user && password_verify($password, $user['UserPasswords'])) {
-            
+
             $_SESSION['user_id'] = $user['id']; // Guarda el ID del usuario
             $_SESSION['username'] = $user['Users']; // Guarda el nombre de usuario
-            $_SESSION['logged_in'] = true; 
+            $_SESSION['logged_in'] = true;
 
             // Redirige a la página de inicio (home.php)
             header('Location: ../../src/View/pages/home.php');
-            exit(); 
+            exit();
         } else {
             // Credenciales incorrectas
             $_SESSION['error_message'] = "Credenciales Incorrectas. Inténtalo de nuevo.";
             header('Location: ../View/login/login.php');
-            exit(); 
+            exit();
         }
-
-    } catch(\PDOException $e){
+    } catch (\PDOException $e) {
         error_log("Error de conexión o consulta PDO: " . $e->getMessage());
         $_SESSION['error_message'] = "Ocurrió un error al intentar iniciar sesión. Por favor, inténtalo más tarde.";
         header('Location: ../View/login/login.php');
         exit();
-    } catch(\Throwable $th){
+    } catch (\Throwable $th) {
         error_log("Error inesperado: " . $th->getMessage());
         $_SESSION['error_message'] = "Ocurrió un error inesperado. Por favor, inténtalo más tarde.";
         header('Location: ../View/login/login.php');
@@ -61,6 +62,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     header('Location: ../View/login/login.php');
     exit();
 }
-
-?>
 
