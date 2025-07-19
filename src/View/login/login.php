@@ -52,6 +52,13 @@
                                     </div>
                                 </div>
 
+                                <!-- Enlace para olvidé mi contraseña -->
+                                <div>
+                                    <div class="text-center mb-3">
+                                        <a href="forgot-password.php" class="text-blue-600 hover:underline dark:text-blue-500">¿Olvidaste tu contraseña?</a>
+                                    </div>
+                                </div>
+
                                 <div class="mb-3 text-center">
                                     <input class="bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md w-full sm:w-auto cursor-pointer focus:outline-none focus:shadow-outline"
                                         type="submit" value="Ingresar">

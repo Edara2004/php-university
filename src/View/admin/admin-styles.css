@@ -1,0 +1,278 @@
+/* Estilos personalizados para el panel de administración */
+
+/* Efectos de transición suaves */
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Fondo con tema oscuro */
+body {
+    background: #111827;
+}
+
+/* Efecto glass morphism */
+.glass-effect {
+    background: rgba(31, 41, 55, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Tarjetas con hover mejorado */
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.card-hover:hover::before {
+    left: 100%;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones con efectos */
+.btn-gradient {
+    background: #2563eb;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-gradient:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabla con diseño mejorado */
+.admin-table {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.admin-table thead {
+    background: #374151;
+    color: white;
+}
+
+.admin-table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+    background: rgba(55, 65, 81, 0.8);
+    transform: scale(1.01);
+}
+
+/* Modales con animaciones */
+.modal {
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Badges con colores */
+.badge-admin {
+    background: #7c3aed;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-user {
+    background: #6b7280;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-active {
+    background: #059669;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-inactive {
+    background: #dc2626;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Iconos con efectos */
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* Mensajes de notificación */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    z-index: 1000;
+    animation: slideInRight 0.3s ease-out;
+}
+
+.notification.success {
+    background: linear-gradient(45deg, #4ade80, #22c55e);
+}
+
+.notification.error {
+    background: linear-gradient(45deg, #f87171, #ef4444);
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Loading spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-hover:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+    
+    .admin-table {
+        font-size: 0.875rem;
+    }
+    
+    .notification {
+        right: 10px;
+        left: 10px;
+        text-align: center;
+    }
+}
+
+/* Efectos de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para inputs */
+.form-input {
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Efectos de partículas de fondo */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 0.5;
+    }
+} 
