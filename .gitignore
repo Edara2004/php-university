@@ -1,5 +1,5 @@
 # CakePHP 3
-public/assets/movie
+/public/assets/movies
 tokens.php
 /vendor/*
 /config/app.php

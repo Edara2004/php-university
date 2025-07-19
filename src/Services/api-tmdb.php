@@ -42,15 +42,24 @@ if ($err) {
         $data = $movie->movie_results[0];
         /* Variables */
 
+        /* Adulto */
+        $adult = $data->adult;
+        /* Titulo de la pelicula */
         $title = $data->title;
+        /* Sipnosis */
         $overview = $data->overview;
-        $vote_average = $data->vote_average;
-        $vote_count = $data->vote_count;
-
         /* Imagen de la pelicula */
         $images = $data->poster_path;
         $get_image = "<img src='https://image.tmdb.org/t/p/w500{$images}'>";
-  
+        /* Fecha de salida */
+        $release_date = $data->release_date;
+        /* Promedio de recomendaciones */
+        $vote_average = $data->vote_average;
+        /* Votos totales */
+        $vote_count = $data->vote_count;
+        /* Idioma original */
+        $original_language = $data->original_language;
+
     } else {
         echo "No se encontró información de la película con el ID de IMDb: " . $imdb_id;
     }

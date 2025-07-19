@@ -2,16 +2,15 @@
 session_start();
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    // Si no hay sesión activa o la bandera no está establecida, redirige al login.
+    // Si no hay sesión activa o la bandera no está establecida, redirige al login
     header('Location: ../login/login.php');
     exit(); // Detiene la ejecución del script
 }
 
 // Cargar datos del usuario si lo necesitas en esta página
 if (isset($_SESSION['user_id'])) {
-    // Aquí podrías hacer una consulta a la base de datos para obtener más detalles del usuario
     $userId = $_SESSION['user_id'];
-    // ... lógica para obtener datos del usuario ...
+    // Lógica para obtener datos del usuario 
 }
 
 ?>
