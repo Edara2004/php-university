@@ -22,9 +22,13 @@ if (isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Flowbite tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font aweso para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="home.css">
     <style>
@@ -59,6 +63,8 @@ if (isset($_SESSION['user_id'])) {
             md:gap-6: Espacio de 24px en pantallas medianas y superiores
             lg:gap-8: Espacio de 32px en pantallas grandes y superiores
         -->
+
+        <!-- imdb_id='xxxxxxx' es la variable para llamar la API -->
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6 lg:gap-8">
 
             <a href="movies/the-avengers.php?imdb_id=tt0848228" class="block relative rounded-lg overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl
