@@ -13,7 +13,6 @@
 <body class="bg-gray-800">
 
     <!-- Header -->
-
     <header><?php require '../layouts/header.php'; ?></header>
 
     <!-- Main -->

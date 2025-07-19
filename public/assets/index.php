@@ -16,9 +16,7 @@ session_start();
 
 <body class="bg-gray-800">
 
-
     <!-- Header -->
-
     <header><?php require '../../src/View/layouts/header.php'?></header>
 
     <!-- Main -->
@@ -36,14 +34,7 @@ session_start();
 
                 <!-- Contenedor del formulario -->
                 <div class="flex justify-center">
-                    <form action="../../src/View/login/registration.php" class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md">
-                        <!-- Campo de entrada de correo electrónico -->
-                        <input
-                            class="w-full sm:w-60 h-10 px-4 rounded-md text-white bg-gray-800/80 shadow-md
-                                   focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
-                            type="email"
-                            placeholder="Tu correo aquí"
-                            required>
+                    <form action="../../src/View/login/registration.php" class="items-center">
                         <!-- Botón de envío -->
                         <button
                             type="submit"
